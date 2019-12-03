@@ -1,0 +1,331 @@
+body 
+{
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    background: url('../img/page_bg.gif');
+    margin: 0;
+    padding: 0;
+}
+#wrapper
+{
+    margin: auto;
+    text-align: left;
+    width: 748px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    margin-bottom: 10px;
+    background: #fff;
+    color: #000;
+}
+#header
+{
+    background: #c80000;
+    margin-top: 9px;
+}
+#sidebar{
+    width: 195px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-bottom: 2px solid #fff;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#content
+{
+    width: 543px;
+    margin: 2px 1px 10px 0;
+    border: 2px solid #e5e5e5;
+    float: right;
+    min-height: 50px;
+}
+
+#footer
+{
+    clear: both;
+    background: #c80000 url('../img/footer_bg.gif');
+    background-repeat: repeat-x;
+    padding: 8px 8px 5px 8px;
+    text-align: center; 
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    color: #fff;
+}
+#login_nav
+{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    width: 550px;
+    margin-left: 225px;
+    margin-top: -40px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#sidebar dl dt{
+    background: #c80000 url('../img/dt_bg.gif') bottom repeat-x;
+    color: #fff;
+    margin: 2px 2px 1px 2px;
+    padding: 6px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sidebar dl
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+#sidebar dl dd {
+    background: #227293;
+    border-bottom: 1px solid #659DB4;
+    margin: 0 2px;
+    padding: 0;
+}
+
+#sidebar dl dd a
+{
+    color: #fff;
+    font-weight: bold;
+    padding: 3px 22px;
+    display: block;
+}
+
+
+#sidebar dl dd a:hover
+{
+    background: #74A7B7;
+}
+
+#content h2{
+    font: bold 30px Arial;
+    color: #39f;
+    padding-left: 20px;
+}
+
+.box
+{
+    margin: 5px;
+    float: left;
+    width: 250px;
+    text-align: center;
+}
+
+.box:nth-child(even)
+{
+    border-top: 5px solid rgb(156, 211, 165);
+    margin-right: 15px;
+}
+
+.box:nth-child(odd)
+{
+    border-top: 5px solid rgb(119, 184, 219);
+    margin-right: 15px;
+}
+
+.box img, .box-detail img
+{
+    width: 230px;
+    height: 150px;
+}
+
+.box-detail
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-detail .content-detail
+{
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.box-detail .content-detail .pname, .box-detail .content-detail .pprice, .box-detail .content-detail .pbrand,
+.box-detail .content-detail .ptype, .box-detail .content-detail .pamount, .box-detail .content-detail .pviewer
+{
+    font: 600 15px arial;
+    color: black;
+    margin-top: 5px;
+}
+.box-detail .content-detail .order
+{
+    text-align: center;
+}
+
+.box-detail .content-detail .order img
+{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.box-detail .content-detail .pname span
+{
+    font: bold 20px arial;
+    color: #f39;
+    margin-top: 5px;
+}
+
+
+.box-detail .content-detail .pprice span
+{
+    font: bold 20px arial;
+    color: red;
+    margin-top: 5px;
+}
+
+.box-detail .content-detail .pbrand span
+{
+    font: bold 20px arial;
+    color: #00b894;
+    margin-top: 5px;
+}
+.box-detail .content-detail .ptype span , .box-detail .content-detail .pamount span,
+ .box-detail .content-detail .pviewer span
+{
+    font: bold 18px arial;
+    color: #b2bec3;
+    margin-top: 5px;
+}
+
+
+.pname
+{
+    font: bold 14px arial;
+    color: #f39;
+    margin-top: 5px;
+}
+
+.pprice {
+    font: bold 12px arial;
+    color: #f30;
+}
+
+.action
+{
+    font: italic bold 10px arial;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    color: #f96;
+    text-align: right;
+}
+
+#chitietsp
+{
+    padding: 10px;
+    min-height: 220px;
+
+}
+
+#chitietleft
+{
+    float: left;
+    margin-bottom: 10px;
+}
+
+#chitietleft img 
+{
+    width: 200px;
+    height: 150px;
+}
+
+#chitietright
+{
+    float: right;
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#mota
+{
+    clear: both;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.lable
+{
+    width: 100px;   
+    text-align: right;
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.data
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.productname
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #f69;
+}
+
+.price
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #f93;
+}
+
+.factory
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3c6;
+}
+
+.giohang
+{
+    text-align: center;
+}
+
+
+#quanlygiohang
+{
+    padding: 5px;
+    text-align: center;
+}
+
+#quanlygiohang h1
+{
+    color: #f63;
+    font-weight: bold;
+}
+
+#quanlygiohang table
+{
+    border: 1px solid #369;
+    width:  530px;
+    padding: 0;
+    border-spacing: 0;
+    text-align: left;
+}
+
+#quanlygiohang table tr td, #quanlygiohang table tr th
+{
+    border: 1px solid #369;
+    margin: 0;
+    padding: 5px;
+}
+
+#quanlygiohang table tr th
+{
+    text-align: center;
+}
+
