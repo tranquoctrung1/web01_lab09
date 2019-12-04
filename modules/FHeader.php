@@ -12,6 +12,8 @@
                 <a href="./modules/xlDangXuat.php">Đăng Xuất</a>
                 <a href="./index.php?a=5">
                    <img src="./img/manage_shopping.png" alt="" height="20"> </a>
+                <a href="./index.php?a=7">Thay Đổi Thông Tin</a>
+                <a href="./index.php?a=8">Danh sách đơn đặt hàng</a>
                 <?php
 
             }
