@@ -20,8 +20,8 @@
         $row = mysqli_fetch_array($result);
         if($row != null)
         {
-            $curURL = $_SESSION['path'];
-            DataProvider::ChangeURL('../../../'.$curURL.'$err=1');
+            $curURL = $_SESSION["path"];
+            DataProvider::ChangeURL('../../..'.$curURL.'&err=1');
         }
 
         else 
@@ -34,16 +34,16 @@
             $row = mysqli_fetch_array($result);
 
             $_SESSION['MaTaiKhoan'] = $row['MaTaiKhoan'];
-            $_SESSION['MaTaiKhoan'] = 1;
+            $_SESSION['MaLoaiTaiKhoan'] = 1;
             $_SESSION['TenHienThi'] = $name;
 
             DataProvider::ChangeURL('../../index.php');
             
         }
     }
-    esle 
+    else
     {
-        DataProvider::ChangeURL('../../index.php?a=404')
+        DataProvider::ChangeURL('../../index.php?a=404');
     }
 
 ?>

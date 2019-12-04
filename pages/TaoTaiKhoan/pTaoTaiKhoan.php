@@ -1,5 +1,5 @@
 <h1>Tạo Tài Khoản</h1>
-<form action="pages/TaoTaiKhoan/xlTaoTaikhoan.php" method="POST" onsubmit="return KiemTra()">
+<form action="./pages/TaoTaiKhoan/xlTaoTaikhoan.php" method="POST" onsubmit="return KiemTra()">
     <div>
         <span class="label">Tên đăng nhập: </span>
         <input type="text" id="us" name="us">
@@ -12,12 +12,12 @@
     </div>
     <div>
         <span class="label">Nhập lại mật khẩu: </span>
-        <input type="password" id="rps" >
+        <input type="password" id="rps">
         <span class="err" id="eRPS"></span>
     </div>
     <div>
         <span class="label">Tên hiển thị: </span>
-        <input type="password" id="name" name="name" >
+        <input type="text" id="name" name="name">
         <span class="err" id="eNAME"></span>
     </div>
     <div>
@@ -41,111 +41,84 @@
     </div>
 </form>
 
-<script type="text/javascript">
-
-    function KiemTra()
-    {
+<script>
+    function KiemTra() {
         var co = true;
 
         var control = document.getElementById('us');
         var err = document.getElementById('eUS');
-
-        if(control.value == '')
-        {
+        if (control.value == '') {
             co = false;
             err.innerHTML = "Tên đăng nhập không được rổng";
-        }
-        else 
-        {
+        } else {
             err.innerHTML = '';
         }
 
         control = document.getElementById('ps');
         err = document.getElementById('ePS');
-        if(control.value == '')
-        {
+        if (control.value == '') {
             co = false;
             err.innerHTML = "Mật Khẩu không được rỗng";
-        }
-        else 
-        {
+        } else {
             err.innerHTML = '';
         }
 
         control1 = document.getElementById('rps');
         err = document.getElementById('eRPS');
-        if(control.value !=  control1.value)
-        {
+        if (control.value != control1.value) {
             co = false;
             err.innerHTML = "Mật Khẩu không trùng";
-        }
-        else 
-        {
+        } else {
             err.innerHTML = '';
         }
 
         control = document.getElementById('name');
         err = document.getElementById('eNAME');
-        if(control.value == '')
-        {
+        if (control.value == '') {
             co = false;
             err.innerHTML = "Tên hiễn thị không được rỗng";
-        }
-        else 
-        {
+        } else {
             err.innerHTML = '';
         }
 
         control = document.getElementById('add');
         err = document.getElementById('eADD');
-        if(control.value == '')
-        {
+        if (control.value == '') {
             co = false;
             err.innerHTML = "Địa chỉ không được rỗng";
-        }
-        else 
-        {
+        } else {
             err.innerHTML = '';
         }
 
         control = document.getElementById('tel');
         err = document.getElementById('eTEL');
-        if(control.value == '')
-        {
+        if (control.value == '') {
             co = false;
             err.innerHTML = "Số điện thoại không được rỗng";
-        }
-        else 
-        {
+        } else {
             err.innerHTML = '';
         }
 
         control = document.getElementById('mail');
         err = document.getElementById('eMail');
-        if(control.value == '')
-        {
+        if (control.value == '') {
             co = false;
             err.innerHTML = "Địa chỉ email không được rỗng";
-        }
-        else 
-        {
+        } else {
             err.innerHTML = '';
         }
 
         return co;
-
     }
-
 </script>
 
-<?php 
-    if(isset($_GET['err']))
-    {
-        ?>
-            <div>
-                <span class="err">Tên đăng nhập không tồn tại</span>
-            </div>
-        <?php
-    }
+<?php
+if (isset($_GET['err'])) {
+    ?>
+    <div>
+        <span class="err">Tên đăng nhập không tồn tại</span>
+    </div>
+<?php
+}
 
 ?>

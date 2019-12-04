@@ -1,5 +1,5 @@
 <div id='header'>
-    <a href='index.php'>
+    <a href='./index.php'>
         <img src='./img/logo.gif' alt='logo lego' width='519' height='63'>
     </a>
     <div id='login_nav'>
@@ -9,9 +9,9 @@
             {
                 ?>
                 Hello, <?php  echo $_SESSION['TenHienThi'];?>
-                <a href="modules/xlDangXuat.php">Đăng Xuất</a>
-                <a href="index.php/?a=5">
-                   <img src="img/manage_shopping.png" alt="" height="20"> </a>
+                <a href="./modules/xlDangXuat.php">Đăng Xuất</a>
+                <a href="./index.php?a=5">
+                   <img src="./img/manage_shopping.png" alt="" height="20"> </a>
                 <?php
 
             }
@@ -27,7 +27,7 @@
                     <script type="text/javascript">
                         function ChuyenTrangDangKy()
                         {
-                            location = "index.php?a=6";
+                            location = "./index.php?a=6";
                         }
                     </script>
                     <?php

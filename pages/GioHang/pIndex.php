@@ -1,6 +1,6 @@
 <?php
 
-    include('lib/ShoppingCart.php');
+    include('./lib/ShoppingCart.php');
 
     if(isset($_SESSION['GioHang']) != null)
     {
@@ -18,7 +18,7 @@
 
         $_SESSION['GioHang'] = serialize($gioHang);
 
-        DataProvider::ChangeURL('index.php?a=5');
+        DataProvider::ChangeURL('./index.php?a=5');
     }
 
     $sub = 1;
@@ -30,13 +30,13 @@
     switch ($sub)
     {
         case 1:
-            include('pages/GioHang/pDanhSach.php');
+            include('./pages/GioHang/pDanhSach.php');
             break;
         case 2:
-            include('pages/GioHang/pThongBaoDatHangThanhcong.php');
+            include('./pages/GioHang/pThongBaoDatHangThanhcong.php');
             break;
         default:
-            DataProvider::ChangeURL('index.php?a=404');
+            DataProvider::ChangeURL('./index.php?a=404');
             break;
     }
 

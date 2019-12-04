@@ -15,7 +15,7 @@
 
         public function update($id, $newNum)
         {
-            for($i = 0; i < count($this->listProduct); $i ++)
+            for($i = 0; $i < count($this->listProduct); $i++)
             {
                 if($this->listProduct[$i]->id == $id)
                 {
@@ -26,7 +26,7 @@
 
         public function delete($id)
         {
-            for($i = 0; i < count($this->listProduct); $i ++)
+            for($i = 0; $i < count($this->listProduct); $i++)
             {
                 if($this->listProduct[$i]->id == $id)
                 {
@@ -49,7 +49,7 @@
             {
                 for($i = 0; $i < count($this->listProduct); $i ++)
                 {
-                    if($this->listProduct[$i]->id == $i)
+                    if($this->listProduct[$i]->id == $id)
                     {
                         break;
                     }
@@ -57,7 +57,7 @@
                 if($i == count($this->listProduct))
                 {
                     $p = new Product();
-                    $p->id = $i;
+                    $p->id = $id;
                     $p->num = 1;
 
                     $this->listProduct[] = $p;

@@ -4,7 +4,7 @@
 
     include('../lib/DataProvider.php');
     
-    if(isset($_POST('txtUS')) && isset($_POST['txtPS']))
+    if(isset($_POST['txtUS']) && isset($_POST['txtPS']))
     {
         $us = $_POST['txtUS'];
         $ps = $_POST['txtPS'];
@@ -39,7 +39,7 @@
                 }
                 else 
                 {
-                    DataProvider::ChangeURL("../../".$curURL);
+                    DataProvider::ChangeURL('../..'.$curURL);
                 }
             }
         }
@@ -48,6 +48,4 @@
     {
         DataProvider::ChangeURL('../index.php?a=404&id=1');
     }
-
-
 ?>

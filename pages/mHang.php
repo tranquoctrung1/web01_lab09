@@ -4,13 +4,12 @@
 
         $sql = "SELECT * FROM HangSanXuat WHERE BiXoa =0";
         $result = DataProvider::ExecuteQuery($sql);
-        $content = "";
 
         while($row = mysqli_fetch_array($result))
         {
             ?>
                 <dd>
-                    <a href="index.php?a=2&id=<?php echo $row['MaHangSanXuat']; ?>">
+                    <a href="./index.php?a=2&id=<?php echo $row['MaHangSanXuat']; ?>">
                         <?php 
                             echo $row['TenHangSanXuat'];
                         ?>
