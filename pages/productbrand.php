@@ -2,7 +2,7 @@
     $tittle= "Hãng Sản Xuất";
 
     $page_content = "<div id='content'>
-        <h2>Sản phẩm theo loại</h2>
+        <h2>Sản phẩm theo hãng</h2>
         <div class='box'>
             <img src='./images/Rastar_Lamborghini_Murcielago.jpg' alt=''>
             <div class='pname'>City Park Cafe 3061</div>
@@ -20,4 +20,4 @@
             </div>
         </div>
     </div>";
-?>
+    ?>

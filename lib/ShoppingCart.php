@@ -24,6 +24,17 @@
             }
         }
 
+        public function delete($id)
+        {
+            for($i = 0; i < count($this->listProduct); $i ++)
+            {
+                if($this->listProduct[$i]->id == $id)
+                {
+                    array_splice($this->listProduct, $i, 1);
+                }
+            }
+        }
+
         public function add($id)
         {
             if(count($this->listProduct) == 0)

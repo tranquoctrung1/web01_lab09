@@ -18,7 +18,7 @@
             else 
             {
                 ?>
-                    <form name='frmLogin' action='inc/xlDangNhap.php' method='post' onsubmit='return KiemTraDangNhap()'>
+                    <form name='frmLogin' action='modules/xlDangNhap.php' method='post' onsubmit='return KiemTraDangNhap()'>
                         Tài Khoản: <input type='text' name='txtUS' id='txtUS' size='10' maxlength='20' width='10'>
                         Mật Khẩu: <input type='password' name='txtPS' id='txtPS' size='10' maxlength='20' width='10'>
                         <input type='submit' value='Đăng Nhập'>
