@@ -1,10 +1,12 @@
 <h2>Thông tin Tài Khoản</h2>
 <?php 
-
-    $id = $_SESSION['MaTaiKhoan'];
-    $sql = "SELECT * FROM TaiKhoan WHERE MaTaiKhoan = $id";
-    $result = DataProvider::ExecuteQuery($sql);
-    $row = mysqli_fetch_array($result);
+    if(isset($_SESSION['MaTaiKhoan']))
+    {
+        $id = $_SESSION['MaTaiKhoan'];
+        $sql = "SELECT * FROM TaiKhoan WHERE MaTaiKhoan = $id";
+        $result = DataProvider::ExecuteQuery($sql);
+        $row = mysqli_fetch_array($result);
+    } 
 ?>
 
 <form action="./pages/xlThayDoiTaiKhoan.php" method="POST">

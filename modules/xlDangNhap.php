@@ -28,7 +28,7 @@
 
             if($row['MaLoaiTaiKhoan'] == 2)
             {
-                DataProvider::ChangeURL("../adimin.index/php");
+                DataProvider::ChangeURL("../admin/index.php");
             }
             else
             {
